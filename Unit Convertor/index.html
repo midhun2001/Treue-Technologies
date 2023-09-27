@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Convertor</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="converter_header">
+            <select name="converter_option" id="converter_option">
+                <option value="length">Length</option>
+            </select>
+        </div>
+
+        <span>
+            <div class="converter_interface input_box">
+                <input class="display_box" type="text" id="input">
+                <select class="unit_box" name="inputType" id="inputType">
+                    <option value="mm">Millimeter</option>
+                    <option value="cm">Centimeter</option>
+                    <option value="m">Meter</option>
+                    <option value="km">Kilometer</option>
+                </select>
+            </div>=
+            <div class="converter_interface result_box">
+                <input class="display_box" type="text" id="result">
+                <select class="unit_box" name="resultType" id="resultType">
+                    <option value="mm">Millimeter</option>
+                    <option value="cm">Centimeter</option>
+                    <option value="m">Meter</option>
+                    <option value="km">Kilometer</option>
+                </select>
+            </div>
+        </span>
+
+        <button onclick="calculate()">Calculate</button>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
